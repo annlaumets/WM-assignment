@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body>
 
-<ul>
-    <li>pożyczkon.cz</li>
-    <li>O nas</li>
-    <li>kontakt</li>
-    <li>infolinia: 567 897 488</li>
-</ul>
+<header>
+    <nav>
+        <ul>
+            <li>pożyczkon.cz</li>
+            <li class="bold" id="us">O nas</li>
+            <li class="bold" id="contact">kontakt</li>
+            <li>infolinia: 567 897 488</li>
+        </ul>
+    </nav>
+    <div id="header-img"></div>
+</header>
 
 <div>
-    <label>
+    <form>
         <label for="lender">ILE PIENIĘDZY CHCESZ POŻYCZYĆ?</label>
         <input id="lender" type="range" min="1600" max="6000" step="10" value="2200"/>
         <label for="days">NA ILE DNI?</label>
-        <input id="days" type="range" min="60" max="150" step="10" value="80" />
+        <input id="days" type="range" min="60" max="150" step="10" value="80"/>
 
         <label>pożyczka</label>
         <label>koszt</label>
@@ -31,75 +35,97 @@
     </form>
 </div>
 
-<div>
-    <div id="first">
+<div id="lowerBody">
+    <div class="block">
         <h1>Uczciwe zasady</h1>
         <p>Wszystko jest jasne – nasza oferta nie zawiera żadnych ukrytych opłat. Jest skonstruowana w przejrzysty i
             praktyczny sposób, by nie przysparzała Ci dodatkowych problemów. Wiemy, że bycie fair się opłaca!
         </p>
     </div>
-    <div id="second">
+    <div class="block">
         <h1>Szybki przelew</h1>
         <p>Liczy się czas. Przelew środków otrzymasz zaraz po zweryfikowaniu Twojego wniosku! Jesteśmy dla Ciebie
             dostępni 24 godziny na dobę.
         </p>
     </div>
-    <div id="third">
+    <div class="block last">
         <h1>Elastyczna spłata</h1>
         <p>Dbamy o Twój komfort – zaciągniętą pożyczkę możesz spłacić za pośrednictwem bankowości internetowej lub w
             tradycyjnej placówce bankowej.
         </p>
     </div>
-</div>
 
-<div class="legal">
-    <div>
-        WARUNKI <br>
-        Jednorazowa opłata rejestracyjna wynosi 0,01 PLN i uiszczana jest przez Pożyczkobiorcę w związku z zakładaniem
-        Profilu Klienta na portalu pożyczkomat.pl Reprezentatywny przykład: całkowita kwota pożyczki 800 PLN; czas
-        obowiązywania umowy 35 dni; oprocentowanie 0%; opłata przygotowawcza 0%; prowizja 0 PLN; całkowita kwota do
-        zapłaty 800 PLN; RRSO 0% (stan na dzień 23.05.2016 r.).
-        Dodatkowe koszty związane z Pożyczką mogą być naliczone wyłącznie w momencie braku terminowej spłaty udzielonej
-        Pożyczki. W przypadku opóźnienia w spłacie Pożyczki, Pożyczkodawca zastrzega sobie możliwość naliczenia odsetek
-        za opóźnienie w wysokości równej dwukrotności sumy stopy referencyjnej Narodowego Banku Polskiego i 5,5 punktów
-        procentowych, a także podjęcia działań mających na celu zwrot Pożyczki przez Pożyczkobiorcę. W szczególności
-        Pożyczkodawca może wezwać Pożyczkobiorcę do zapłaty telefonicznie lub wysyłając SMS, e-mail lub pisemne wezwanie
-        do zapłaty. Pożyczkobiorca może zostać obciążony kosztami tych monitów zgodnie z warunkami obowiązującej Tabeli
-        Opłat i Prowizji. Pożyczkobiorca może zostać obciążony kosztami dochodzenia zwrotu Pożyczki na drodze
-        postępowania sądowego.
-        W przypadku łącznego spełnienia przesłanek określonych w artykule 14 lub 16 bądź 17 ustawy z dnia 9 kwietnia
-        2010 r. o udostępnianiu informacji gospodarczych i wymianie danych gospodarczych (t. j. w Dz. U. z 2014 r., poz.
-        1015, z późn. zm.) Pożyczkodawca ma prawo przekazać informacje o zobowiązaniach Pożyczkobiorcy do Biur
-        Informacji Gospodarczej, co może mieć wpływ na zdolność kredytową Pożyczkobiorcy. Przekazanie danych
-        Pożyczkobiorcy do Biur Informacji Gospodarczej jest dokonywane na podstawie pisemnej umowy o udostępnianie
-        informacji gospodarczych zawartej przez Pożyczkodawcę z Biurem Informacji Gospodarczej oraz w oparciu o przepisy
-        rozdziału 3 ustawy o udostępnianiu informacji gospodarczych i wymianie danych gospodarczych. Pożyczkodawca ma
-        również prawo przekazać informacje o zobowiązaniach Pożyczkobiorcy do Biura Informacji Kredytowej S.A.
-        Przekazywanie danych Pożyczkobiorcy do Biura Informacji Kredytowej S.A. jest dokonywane na podstawie udzielonej
-        przez Pożyczkobiorcę zgody
+    <div class="legal">
+        <div>
+            <h3>WARUNKI</h3>
+            <p>Jednorazowa opłata rejestracyjna wynosi 0,01 PLN i uiszczana jest przez Pożyczkobiorcę w związku z
+                zakładaniem
+                Profilu Klienta na portalu pożyczkomat.pl Reprezentatywny przykład: całkowita kwota pożyczki 800 PLN;
+                czas
+                obowiązywania umowy 35 dni; oprocentowanie 0%; opłata przygotowawcza 0%; prowizja 0 PLN; całkowita kwota
+                do
+                zapłaty 800 PLN; RRSO 0% (stan na dzień 23.05.2016 r.).
+                Dodatkowe koszty związane z Pożyczką mogą być naliczone wyłącznie w momencie braku terminowej spłaty
+                udzielonej
+                Pożyczki. W przypadku opóźnienia w spłacie Pożyczki, Pożyczkodawca zastrzega sobie możliwość naliczenia
+                odsetek
+                za opóźnienie w wysokości równej dwukrotności sumy stopy referencyjnej Narodowego Banku Polskiego i 5,5
+                punktów
+                procentowych, a także podjęcia działań mających na celu zwrot Pożyczki przez Pożyczkobiorcę. W
+                szczególności
+                Pożyczkodawca może wezwać Pożyczkobiorcę do zapłaty telefonicznie lub wysyłając SMS, e-mail lub pisemne
+                wezwanie
+                do zapłaty. Pożyczkobiorca może zostać obciążony kosztami tych monitów zgodnie z warunkami obowiązującej
+                Tabeli
+                Opłat i Prowizji. Pożyczkobiorca może zostać obciążony kosztami dochodzenia zwrotu Pożyczki na drodze
+                postępowania sądowego.</p>
+            <p>W przypadku łącznego spełnienia przesłanek określonych w artykule 14 lub 16 bądź 17 ustawy z dnia 9
+                kwietnia
+                2010 r. o udostępnianiu informacji gospodarczych i wymianie danych gospodarczych (t. j. w Dz. U. z 2014
+                r.,
+                poz.
+                1015, z późn. zm.) Pożyczkodawca ma prawo przekazać informacje o zobowiązaniach Pożyczkobiorcy do Biur
+                Informacji Gospodarczej, co może mieć wpływ na zdolność kredytową Pożyczkobiorcy. Przekazanie danych
+                Pożyczkobiorcy do Biur Informacji Gospodarczej jest dokonywane na podstawie pisemnej umowy o
+                udostępnianie
+                informacji gospodarczych zawartej przez Pożyczkodawcę z Biurem Informacji Gospodarczej oraz w oparciu o
+                przepisy
+                rozdziału 3 ustawy o udostępnianiu informacji gospodarczych i wymianie danych gospodarczych.
+                Pożyczkodawca
+                ma
+                również prawo przekazać informacje o zobowiązaniach Pożyczkobiorcy do Biura Informacji Kredytowej S.A.
+                Przekazywanie danych Pożyczkobiorcy do Biura Informacji Kredytowej S.A. jest dokonywane na podstawie
+                udzielonej
+                przez Pożyczkobiorcę zgody</p>
+        </div>
+        .
+        <div>
+            <h3>REFINANSOWANIE POŻYCZKI</h3>
+            <p>Pożyczkobiorca ma możliwość zrefinansowania Pożyczki poprzez zaciągnięcie Pożyczki Refinansującej u
+                jednego z
+                Pożyczkodawców z grupy kapitałowej Friendly Finance, na warunkach określonych przez tego
+                Pożyczkodawcę</p>
+        </div>
+        .
+        <div>
+            <h3>PODMIOT UDZIELAJĄCY POŻYCZKI</h3>
+            <p>Friendly Finance Poland spółka z ograniczoną odpowiedzialnością z siedzibą w Warszawie 00-019 przy ul.
+                Złotej
+                7/18, telefon +48 22 112 0 112, NIP: 1070025046, REGON: 146512445.#Wpisana do rejestru przedsiębiorców
+                Krajowego
+                Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla m.st. Warszawy w Warszawie, XII Wydział
+                Gospodarczy
+                Krajowego Rejestru Sądowego pod nr KRS: 0000448749. Kapitał zakładowy w wysokości 2.000 000,00 PLN</p>
+        </div>
     </div>
-    .
-    <div>
-        REFINANSOWANIE POŻYCZKI <br>
-        Pożyczkobiorca ma możliwość zrefinansowania Pożyczki poprzez zaciągnięcie Pożyczki Refinansującej u jednego z
-        Pożyczkodawców z grupy kapitałowej Friendly Finance, na warunkach określonych przez tego Pożyczkodawcę
-    </div>
-    .
-    <div>
-        PODMIOT UDZIELAJĄCY POŻYCZKI <br>
-        Friendly Finance Poland spółka z ograniczoną odpowiedzialnością z siedzibą w Warszawie 00-019 przy ul. Złotej
-        7/18, telefon +48 22 112 0 112, NIP: 1070025046, REGON: 146512445.#Wpisana do rejestru przedsiębiorców Krajowego
-        Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy
-        Krajowego Rejestru Sądowego pod nr KRS: 0000448749. Kapitał zakładowy w wysokości 2.000 000,00 PLN
-    </div>
-</div>
 
-<div class="footer">
-    <ul>
-        <li>Wszelkie Prawa zastrzeżone 2016 | Pożyczkon.cz</li>
-        <li>O nas | Kontakt</li>
-        <li>fb google</li>
-    </ul>
+    <footer>
+        <ul>
+            <li>Wszelkie Prawa zastrzeżone 2016 | Pożyczkon.cz</li>
+            <li>O nas | Kontakt</li>
+            <li>fb google</li>
+        </ul>
+    </footer>
 </div>
 
 </body>

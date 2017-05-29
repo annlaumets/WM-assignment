@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Athiti);
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Athiti", sans-serif; }
+
+/*div {
+  display: table;
+  table-layout: fixed;
+  text-align: justify;
+  text-justify: inter-word;
+}*/
+/*header {
+  width: 100%;
+  height: 200px;
+  margin: 20px;
+
+  background: url(header-bg.png);
+}*/
+header {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #f1f1f1; }
+  header nav {
+    display: inline-block;
+    width: 100%;
+    font-size: 14pt; }
+    header nav ul li {
+      display: inline;
+      float: left;
+      padding: 10px;
+      margin: 10px;
+      text-transform: uppercase; }
+  header .bold {
+    font-weight: bold; }
+  header #us {
+    border-bottom: 3px solid #000;
+    padding-bottom: 0px; }
+  header #contact {
+    color: #cdbb69; }
+  header #header-img {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: url("header-bg.png") no-repeat;
+    background-size: 33%;
+    box-shadow: 50px 10px 80px 0 #f1f1f1 inset, -1040px 20px 80px 0 #f1f1f1 inset; }
+
+#lowerBody {
+  width: 60%;
+  margin: 0 auto; }
+
+.block {
+  float: left;
+  width: 29%;
+  border-right: thin solid #cdbb69;
+  margin: 10px;
+  padding: 10px;
+  height: 250px; }
+
+.last {
+  border: none !important; }
+
+.block p {
+  border: none !important; }
+
+h3 {
+  text-align: center; }
+
+.legal {
+  padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */
