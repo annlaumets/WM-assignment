@@ -1,0 +1,49 @@
+// http://www.hongkiat.com/blog/skewed-edges-css/
+@mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null) {
+  width: 100%;
+  position: relative;
+  background: $secondary-color;
+  &::before,
+  &::after {
+    content: '';
+    width: 97%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    padding: inherit;
+    z-index: -1;
+    left: 0;
+  }
+
+  @if $pos-top {
+    &::before {
+      @if $pos-top == 'topleft' {
+        top: 0;
+        transform-origin: right top;
+        transform: skewY($angle-top);
+      }
+      @if $pos-top == 'topright' {
+        top: 0;
+        transform-origin: left top;
+        transform: skewY(-$angle-top);
+      }
+    }
+  }
+
+  @if $pos-btm {
+    &::after {
+      @if $pos-btm == 'bottomleft' {
+        bottom: 0;
+        transform-origin: right bottom;
+        transform: skewY(-$angle-btm);
+
+      }
+
+      @if $pos-btm == 'bottomright' {
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY($angle-btm);
+      }
+    }
+  }
+}
