@@ -130,9 +130,8 @@ input[type=range]::-ms-thumb::before {
   float: right;
   width: 50%;
   margin-right: 13%;
-  margin-top: 20px;
-  background: #ffffff;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
 
   @include angle-edge(#ffffff, topright, 3deg, bottomleft, 3deg);
 }
@@ -200,4 +199,69 @@ fieldset {
 
 form {
   margin: 0 auto;
+}
+
+button[type=submit] {
+  background-color: $blue-color;
+  padding: 20px;
+  border: thick solid $primary-color;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 11pt;
+  float: right;
+  margin-top: 30px;
+
+  img {
+    //padding-top: 10px;
+    padding-left: 20px;
+  }
+}
+
+.slider table {
+  text-transform: uppercase;
+  //border-color: $primary-color;
+  font-size: 10pt;
+  display: inline-block;
+  width: 30%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+  td {
+  padding: 2px 2px 2px 5px;
+}
+
+  td:first-child {
+    width: 50%;
+  }
+
+  td:last-child {
+    padding-left: 15px;
+  }
+
+  .numbers {
+    color: $primary-color;
+    font-weight: 900;
+  }
+
+  .outcome {
+    font-size: 16pt;
+  }
+
+  #terminate {
+    font-size: 8pt;
+    text-align: center;
+  }
+
+  tr {
+    border-bottom: thin solid $primary-color;
+  }
+
+  tr:last-child {
+    border: none;
+  }
+
+  .borderRight {
+    border-right: thin solid $primary-color;
+  }
 }

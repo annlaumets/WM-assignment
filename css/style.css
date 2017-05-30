@@ -128,9 +128,8 @@ input[type=range]::-ms-thumb::before {
   float: right;
   width: 50%;
   margin-right: 13%;
-  margin-top: 20px;
-  background: #ffffff;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
   position: relative;
   background: #ffffff; }
   .slider::before, .slider::after {
@@ -192,6 +191,47 @@ fieldset {
 
 form {
   margin: 0 auto; }
+
+button[type=submit] {
+  background-color: #7795a3;
+  padding: 20px;
+  border: thick solid #cdbb69;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 11pt;
+  float: right;
+  margin-top: 30px; }
+  button[type=submit] img {
+    padding-left: 20px; }
+
+.slider table {
+  text-transform: uppercase;
+  font-size: 10pt;
+  display: inline-block;
+  width: 30%;
+  border-collapse: collapse;
+  margin-top: 10px; }
+  .slider table td {
+    padding: 2px 2px 2px 5px; }
+  .slider table td:first-child {
+    width: 50%; }
+  .slider table td:last-child {
+    padding-left: 15px; }
+  .slider table .numbers {
+    color: #cdbb69;
+    font-weight: 900; }
+  .slider table .outcome {
+    font-size: 16pt; }
+  .slider table #terminate {
+    font-size: 8pt;
+    text-align: center; }
+  .slider table tr {
+    border-bottom: thin solid #cdbb69; }
+  .slider table tr:last-child {
+    border: none; }
+  .slider table .borderRight {
+    border-right: thin solid #cdbb69; }
 
 body {
   width: 100%;
