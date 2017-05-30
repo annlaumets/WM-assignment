@@ -1,5 +1,6 @@
 @import "variables";
 @import "skewed-edges";
+@import "slider";
 
 body {
   width: 100%;
@@ -23,23 +24,34 @@ body {
   }
 
   .block {
-    //display: table-cell;
     float: left;
-    width: 28%;
-    border-right: thin solid $primary-color;
+    width: 33%;
     margin: 0;
-    padding: 30px;
     height: 400px;
     color: $primary-color;
     text-align: center;
-  }
+    line-height: 250%;
 
-  .last {
-    border: none !important;
+    .border {
+      border-right: thin solid $primary-color;
+      padding: 5px 20px;
+      margin: 0 auto;
+    }
+
+    .last {
+      border: none !important;
+    }
+
+    .no-border {
+      padding: 0 30px;
+    }
   }
 
   .block p {
     //box-shadow: 0 0 0 2px white;
+    letter-spacing: 1px;
+    line-height: 100%;
+    border: 0;
   }
 
   .block img {
@@ -68,7 +80,7 @@ h3 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 60px;
-  @include angle-edge(topright, 3deg, bottomleft, 3deg);
+  @include angle-edge($secondary-color, topright, 3deg, bottomleft, 3deg);
 
   p {
     margin: 5px 0;
@@ -82,10 +94,13 @@ h3 {
 footer {
   font-size: 11pt;
   text-transform: capitalize;
+  height: 200px;
+  width: 100%;
 
   ul {
     list-style-type: none;
     width: 100%;
+    overflow: hidden;
 
 
     li {

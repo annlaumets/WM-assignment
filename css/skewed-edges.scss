@@ -1,15 +1,15 @@
 // http://www.hongkiat.com/blog/skewed-edges-css/
-@mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null) {
-  width: 100%;
+@mixin angle-edge($bgcolor, $pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null) {
+  //width: 100%;
   position: relative;
-  background: $secondary-color;
+  background: $bgcolor;
   &::before,
   &::after {
     content: '';
-    width: 97%;
+    width: 96.5%;
     height: 100%;
     position: absolute;
-    background: inherit;
+    background: $bgcolor;
     padding: inherit;
     z-index: -1;
     left: 0;

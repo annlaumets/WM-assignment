@@ -12,53 +12,78 @@
 <header>
     <nav>
         <ul>
-            <li>pożyczkon.cz</li>
-            <li class="bold" id="us">O nas</li>
+            <li id="logo">pożyczk<img src="images/letter.png">n.cz</li>
+            <li id="info">infolinia: <span class="blue">567 897 488</span></li>
             <li class="bold" id="contact">kontakt</li>
-            <li>infolinia: 567 897 488</li>
+            <li class="bold" id="us">O nas</li>
         </ul>
     </nav>
-    <div id="header-img"></div>
+    <div id="header-img">
+        <div class="slider">
+            <form>
+                <fieldset>
+                    <label for="lender"><img src="images/letter.png">ILE PIENIĘDZY CHCESZ POŻYCZYĆ?</label><br>
+                    1600 zł <span class="max">6000 zł</span> <br>
+                    <input id="lender" type="range" min="1600" max="6000" step="10" value="3500" disabled/><br>
+                </fieldset>
+                <fieldset>
+                    <label for="days"><img src="images/letter.png">NA ILE DNI?</label><br>
+                    60 DNI <span class="max">150 DNI</span> <br>
+                    <input id="days" type="range" min="60" max="150" step="10" value="80" disabled/><br>
+                </fieldset>
+
+                <label>pożyczka</label>
+                <label>koszt</label>
+                <label>Razem:</label>
+                <label>TERMIN SPŁATY: 5.08.2016</label>
+                <button type="submit">WEŹ POŻYCZKĘ ></button>
+
+            </form>
+        </div>
+    </div>
 </header>
 
-<div>
-    <form>
-        <label for="lender">ILE PIENIĘDZY CHCESZ POŻYCZYĆ?</label>
-        <input id="lender" type="range" min="1600" max="6000" step="10" value="2200"/>
-        <label for="days">NA ILE DNI?</label>
-        <input id="days" type="range" min="60" max="150" step="10" value="80"/>
-
-        <label>pożyczka</label>
-        <label>koszt</label>
-        <label>Razem:</label>
-        <label>TERMIN SPŁATY: 5.08.2016</label>
-        <button type="submit">WEŹ POŻYCZKĘ ></button>
-
-    </form>
-</div>
 
 <div id="lowerBody">
     <div id="columns">
         <div class="block">
-            <img src="images/first.png">
-            <h1>Uczciwe zasady</h1>
-            <p>Wszystko jest jasne – nasza oferta nie zawiera żadnych ukrytych opłat. Jest skonstruowana w przejrzysty i
-                praktyczny sposób, by nie przysparzała Ci dodatkowych problemów. Wiemy, że bycie fair się opłaca!
-            </p>
+            <div class="border">
+                <img src="images/first.png">
+                <h1>Uczciwe zasady</h1>
+            </div>
+            <div class="no-border">
+                <p><span style="font-weight: bolder">Wszystko jest jasne</span> – nasza oferta nie zawiera żadnych
+                    ukrytych
+                    opłat. Jest skonstruowana w przejrzysty i
+                    praktyczny sposób, by nie przysparzała Ci dodatkowych problemów. Wiemy, że bycie fair się opłaca!
+                </p>
+            </div>
         </div>
         <div class="block">
-            <img src="images/second.png">
-            <h1>Szybki przelew</h1>
-            <p>Liczy się czas. Przelew środków otrzymasz zaraz po zweryfikowaniu Twojego wniosku! Jesteśmy dla Ciebie
-                dostępni 24 godziny na dobę.
-            </p>
+            <div class="border">
+                <img src="images/second.png">
+                <h1>Szybki przelew</h1>
+            </div>
+            <div class="no-border">
+                <p><span style="font-weight: bolder">Liczy się czas.</span> Przelew środków otrzymasz zaraz po
+                    zweryfikowaniu
+                    Twojego wniosku! Jesteśmy dla Ciebie
+                    dostępni 24 godziny na dobę.
+                </p>
+            </div>
         </div>
-        <div class="block last">
-            <img src="images/third.png">
-            <h1>Elastyczna spłata</h1>
-            <p>Dbamy o Twój komfort – zaciągniętą pożyczkę możesz spłacić za pośrednictwem bankowości internetowej lub w
-                tradycyjnej placówce bankowej.
-            </p>
+        <div class="block">
+            <div class="border last">
+                <img src="images/third.png">
+                <h1>Elastyczna spłata</h1>
+            </div>
+            <div class="no-border">
+                <p><span style="font-weight: bolder">Dbamy o Twój komfort</span> – zaciągniętą pożyczkę możesz spłacić
+                    za
+                    pośrednictwem bankowości internetowej lub w
+                    tradycyjnej placówce bankowej.
+                </p>
+            </div>
         </div>
     </div>
 
