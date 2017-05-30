@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css?family=Athiti);
+@import url(https://fonts.googleapis.com/css?family=Athiti);
+@import url(https://fonts.googleapis.com/css?family=Athiti);
+.slider {
+  float: right;
+  width: 50%;
+  margin-right: 13%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  position: relative;
+  background: #ffffff; }
+  .slider::before, .slider::after {
+    content: '';
+    width: 96.5%;
+    height: 100%;
+    position: absolute;
+    background: #ffffff;
+    padding: inherit;
+    z-index: -1;
+    left: 0; }
+  .slider::before {
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-3deg); }
+  .slider::after {
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(-3deg); }
+  .slider label {
+    font-weight: bold; }
+    .slider label img {
+      width: 10px;
+      padding-right: 10px; }
+  .slider .max {
+    float: right; }
+  .slider fieldset {
+    text-transform: uppercase;
+    border: none;
+    line-height: 30px; }
+  .slider form {
+    margin: 0 auto; }
+  .slider button[type=submit] {
+    background-color: #7795a3;
+    padding: 20px;
+    border: thick solid #cdbb69;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11pt;
+    float: right;
+    margin-top: 30px; }
+    .slider button[type=submit] img {
+      padding-left: 20px; }
+
+.slider::before,
+.slider::after {
+  width: 100%; }
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border-radius: 6px;
+  height: 6px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.23, #cdbb69), color-stop(0.23, #000)); }
+
+#lender {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.43, #cdbb69), color-stop(0.43, #000)); }
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #fff;
+  border: 1px solid #cdbb69;
+  height: 15px;
+  width: 15px; }
+
+.slider table {
+  text-transform: uppercase;
+  font-size: 10pt;
+  display: inline-block;
+  width: 30%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 0 12px; }
+  .slider table td {
+    padding: 2px 2px 2px 5px; }
+  .slider table td:first-child {
+    width: 50%; }
+  .slider table td:last-child {
+    padding-left: 15px; }
+  .slider table .numbers {
+    color: #cdbb69;
+    font-weight: 900; }
+  .slider table .outcome {
+    font-size: 16pt; }
+  .slider table #terminate {
+    font-size: 8pt;
+    text-align: center; }
+  .slider table tr {
+    border-bottom: thin solid #cdbb69; }
+  .slider table tr:last-child {
+    border: none; }
+  .slider table .borderRight {
+    border-right: thin solid #cdbb69; }
+
+header {
+  width: 75%;
+  margin: 0 auto 30px auto;
+  background-color: #f1f1f1;
+  height: auto; }
+  header nav {
+    display: inline-block;
+    width: 100%;
+    font-size: 12pt; }
+    header nav ul li {
+      display: inline;
+      float: left;
+      padding: 10px;
+      margin: 10px;
+      text-transform: uppercase; }
+  header .bold {
+    font-weight: 900;
+    float: right;
+    letter-spacing: 2px;
+    font-size: 11pt; }
+  header #us {
+    border-bottom: 3px solid #000;
+    padding: 10px 0 0 0; }
+  header #contact {
+    color: #cdbb69; }
+  header #header-img {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    background: url("../images/header-bg.png") no-repeat;
+    background-size: 43%;
+    box-shadow: 50px 10px 80px 0 #f1f1f1 inset, -1040px 20px 80px 0 #f1f1f1 inset;
+    opacity: 0.99; }
+  header #info {
+    float: right;
+    margin-left: 15%;
+    margin-right: 13%; }
+  header span.blue {
+    color: #7795a3;
+    font-weight: bold; }
+  header #logo {
+    letter-spacing: 2px;
+    font-size: 18pt;
+    font-weight: 700;
+    margin-left: 10%; }
+  header img {
+    padding-left: 2px;
+    padding-right: 2px; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Athiti", sans-serif;
+  font-size: 12pt; }
+
+h3 {
+  text-align: center; }
+
+#lowerBody {
+  width: 60%;
+  margin: 0 auto; }
+  #lowerBody #columns {
+    overflow: auto; }
+  #lowerBody #columns:after {
+    content: '';
+    display: block;
+    clear: both; }
+  #lowerBody .block {
+    float: left;
+    width: 33%;
+    margin: 0;
+    height: 400px;
+    color: #cdbb69;
+    text-align: center;
+    line-height: 250%; }
+    #lowerBody .block .border {
+      border-right: thin solid #cdbb69;
+      padding: 5px 20px;
+      margin: 0 auto; }
+    #lowerBody .block .last {
+      border: none !important; }
+    #lowerBody .block .no-border {
+      padding: 0 30px; }
+    #lowerBody .block p {
+      letter-spacing: 1px;
+      line-height: 100%;
+      border: 0; }
+    #lowerBody .block img {
+      margin: 0 auto;
+      display: block;
+      padding: 10px; }
+    #lowerBody .block h1 {
+      font-weight: lighter;
+      font-size: 24pt;
+      text-transform: uppercase;
+      word-spacing: 9999px; }
+  #lowerBody .legal {
+    padding: 20px;
+    font-size: 11pt;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    position: relative;
+    background: #f1f1f1; }
+    #lowerBody .legal::before, #lowerBody .legal::after {
+      content: '';
+      width: 96.5%;
+      height: 100%;
+      position: absolute;
+      background: #f1f1f1;
+      padding: inherit;
+      z-index: -1;
+      left: 0; }
+    #lowerBody .legal::before {
+      top: 0;
+      transform-origin: left top;
+      transform: skewY(-3deg); }
+    #lowerBody .legal::after {
+      bottom: 0;
+      transform-origin: right bottom;
+      transform: skewY(-3deg); }
+    #lowerBody .legal h3, #lowerBody .legal p {
+      margin: 5px 0; }
+  #lowerBody footer {
+    font-size: 11pt;
+    text-transform: capitalize;
+    height: 200px;
+    width: 100%; }
+    #lowerBody footer ul {
+      list-style-type: none;
+      width: 100%;
+      overflow: hidden;
+      padding: 0;
+      color: #666666; }
+      #lowerBody footer ul li {
+        display: inline;
+        float: left;
+        padding: 10px 10px 10px 0;
+        margin: 10px; }
+      #lowerBody footer ul .socials {
+        margin-top: 0;
+        float: right; }
+      #lowerBody footer ul .footerInfo {
+        font-size: 12pt;
+        margin-left: 18%; }
+
+/*# sourceMappingURL=main.css.map */

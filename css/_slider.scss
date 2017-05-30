@@ -1,0 +1,138 @@
+@import "variables";
+@import "_skewed-edges";
+
+.slider {
+  float: right;
+  width: 50%;
+  margin-right: 13%;
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  @include angle-edge(#ffffff, topright, 3deg, bottomleft, 3deg);
+
+  label {
+    font-weight: bold;
+
+    img {
+      width: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .max {
+    float: right;
+  }
+
+  fieldset {
+    text-transform: uppercase;
+    border: none;
+    line-height: 30px;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  button[type=submit] {
+    background-color: $blue-color;
+    padding: 20px;
+    border: thick solid $primary-color;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11pt;
+    float: right;
+    margin-top: 30px;
+
+    img {
+      //padding-top: 10px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.slider::before,
+.slider::after {
+  width: 100%;
+}
+
+input[type="range"]{
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border-radius: 6px;
+  height: 6px;
+  background-image: -webkit-gradient(
+                  linear,
+                  left top,
+                  right top,
+                  color-stop(0.23, $primary-color),
+                  color-stop(0.23, #000)
+  );
+}
+
+#lender {
+  background-image: -webkit-gradient(
+                  linear,
+                  left top,
+                  right top,
+                  color-stop(0.43, $primary-color),
+                  color-stop(0.43, #000)
+  );
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  height: 15px;
+  width: 15px;
+}
+
+.slider table {
+  text-transform: uppercase;
+  font-size: 10pt;
+  display: inline-block;
+  width: 30%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 0 12px;
+
+  td {
+  padding: 2px 2px 2px 5px;
+}
+
+  td:first-child {
+    width: 50%;
+  }
+
+  td:last-child {
+    padding-left: 15px;
+  }
+
+  .numbers {
+    color: $primary-color;
+    font-weight: 900;
+  }
+
+  .outcome {
+    font-size: 16pt;
+  }
+
+  #terminate {
+    font-size: 8pt;
+    text-align: center;
+  }
+
+  tr {
+    border-bottom: thin solid $primary-color;
+  }
+
+  tr:last-child {
+    border: none;
+  }
+
+  .borderRight {
+    border-right: thin solid $primary-color;
+  }
+}
